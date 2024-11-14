@@ -1,0 +1,17 @@
+﻿@model RoversViewModel
+
+<h1>ROVERS</h1>
+<br />
+<div display="flex" flex-wrap="wrap">
+    <div class="row">
+        <div class="col" style="width:30%; align-content:center">
+            <p></p>
+            <img src="@Html.DisplayFor(modelItem => Model.Img_src)"  style="width:100%" />
+        </div>
+        <div class="col" style="align-content:center">
+            <h5><p>Rovers Name: CURIOSITY</p></h5>
+            <h5><p>Id: @Html.DisplayFor(modelItem => Model.Id)</p></h5>
+            <h5><p>Earth Date: @Html.DisplayFor(modelItem => Model.Earth_date)</p></h5>
+        </div>
+    </div>
+</div>

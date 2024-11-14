@@ -1,0 +1,28 @@
+﻿@model ApodViewModel
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image of the day</title>
+</head>
+<body>
+    <h1>APOD</h1>
+    <br />
+    <div display="flex" flex-wrap="wrap">
+        <div class="row" >
+            <div class="col"  style="width:30%; align-content:center">
+                <p></p>
+                <img src="@Html.DisplayFor(modelItem => Model.Url)" alt="@Html.DisplayFor(modelItem => Model.Title)" style="width:100%" />
+            </div>
+            <div class="col" style="align-content:center">
+                <p><h2>@Html.DisplayFor(modelItem => Model.Title)</h2> </p>
+                <p>Date: @Html.DisplayFor(modelItem => Model.Date)</p>
+                <p><h4>@Html.DisplayFor(modelItem => Model.Explanation)</h4></p>
+                <p>Copyright(*): @Html.DisplayFor(modelItem => Model.Copyright)</p>
+                <p><small>(*)Some photos come without copyright</small></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,20 @@
+﻿@model EpicViewModel
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>EPIC</h1>
+
+<div display="flex" flex-wrap="wrap">
+    <div class="row">
+        <div class="col" style="width:50%; align-content:center">
+            <img src="@Html.DisplayFor(modelItem => Model.Path)" style="width:100%" />
+        </div>
+        <div class="col" style="align-content:center; width:50%">
+            <h5>Date: @Html.DisplayFor(modelItem => Model.Date)</h5>
+            <h5>Identifier: @Html.DisplayFor(modelItem => Model.Identifier)</h5>
+            <h5>Name: @Html.DisplayFor(modelItem => Model.Image)</h5>
+            <h5>Caption: @Html.DisplayFor(modelItem => Model.Caption)</h5>
+        </div>
+    </div>
+</div>
